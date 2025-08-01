@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetify Event Booking</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            text-align: center;
+            background-image: url(https://img.freepik.com/free-photo/groom-putting-ring-bride-s-finger_1157-338.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: rgb(87, 10, 87);
+            margin-top: 40px;
+            font-size: 2rem;
+        }
+
+        .btn {
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(110, 0, 110);
+        }
+
+        label {
+            color: rgb(69, 30, 69);
+            font-size: 1rem;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            background-color: rgba(255, 248, 240, 0.95);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .headi {
+            text-decoration: none;
+            float: right;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            background-color: purple;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 20px;
+            }
+
+            .box {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                font-size: 1rem;
+                padding: 12px;
+            }
+
+            .link {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            input,
+            select {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headi">
+        <a class="link" href="./home.html">Home</a>
+    </header>
+
+    <h1>Book Your Event with Meetify</h1>
+
+    <div class="box">
+        <form>
+            <label>Choose Event:</label>
+            <select required>
+                <option value="">---Select---</option>
+                <option>Wedding</option>
+                <option>Corporate Events</option>
+                <option>Music & Entertainment</option>
+                <option>Private Parties</option>
+            </select>
+
+            <label>Select Date:</label>
+            <input type="date" required>
+
+            <label>Preferred Time Slot:</label>
+            <select required>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>Night</option>
+            </select>
+
+            <label>Event Location:</label>
+            <input type="text" placeholder="Enter Location" required>
+
+            <label>Your Name:</label>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <label>Phone:</label>
+            <input type="tel" placeholder="Enter Your Number">
+
+            <button class="btn" type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+
+</html>

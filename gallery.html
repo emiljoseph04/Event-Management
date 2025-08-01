@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meetify Photo Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      /* font-family: sans-serif; */
+      background-color: #fff8f0;
+      text-align: center;
+    }
+
+    h1 {
+      color: purple;
+      font-size: 3rem;
+      margin: 30px 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      /* border-radius: 10px; */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    .headi{
+      text-decoration: none;
+      float: right;
+      margin-top: -25px;
+    
+    }
+    .link{
+      text-decoration: none;
+      font-weight: 600;
+      
+    }
+  </style>
+</head>
+<body>
+  <header class="headi">
+            <a class="link" href="./home.html">Home</a>
+        </header>
+  <h1>Photo Gallery of Meetify</h1>
+
+  <div class="gallery">
+
+    <img src="https://media.istockphoto.com/id/1404444506/photo/beautiful-wedding-couple.jpg?s=170667a&w=0&k=20&c=TYkR78WP_b8w8Mm-PramP7y6vpSbdezv0j3zyU-mmRQ=" alt="Wedding" width="280">
+    <img src="https://t3.ftcdn.net/jpg/03/05/62/88/360_F_305628877_FBgLZGK6Y94xPaED6rZbA9mKCxUHbNBg.jpg" alt="Wedding Ceremony" width="340">
+
+
+    <img src="https://blissfulplans.com/wp-content/uploads/2021/06/kochi-weddings-1024x576.webp" alt="Beach Wedding" width="300">
+    <img src="https://images.wedmegood.com/wp-content/uploads/2018/12/Moving-Pictures1.jpg" alt="Beachside Wedding" width="260">
+
+    <img src="https://www.eternalweddingz.in/storage/Image/Oo7E0owXT68xaf3AiOj3QW1XCanXIqflNR16n08O.webp" alt="Destination Wedding" width="320">
+    <img src="https://luxaus.au/wp-content/uploads/2023/03/kerala-1024x683.jpeg" alt="Scenic Destination Wedding" width="360">
+
+    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Corporate Event" width="270">
+    <img src="https://static.vecteezy.com/system/resources/previews/033/103/580/non_2x/ai-generative-business-people-in-christmas-office-social-gathering-meeting-party-photo.jpg" alt="Business Event" width="310">
+
+    <img src="https://content.api.news/v3/images/bin/39ec7c13d701bee9830ec87b057be608" alt="Private Party" width="290">
+    <img src="https://images.bauerhosting.com/affiliates/sites/12/2022/08/First-birthday-ideas.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80" alt="Celebration" width="330">
+
+    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" alt="DJ Performance" width="250">
+    <img src="https://thumbs.dreamstime.com/b/happy-people-dance-nightclub-party-concert-happy-people-dance-nightclub-party-concert-listen-to-music-dj-118204869.jpg" alt="Party DJ" width="370">
+  </div>
+
+</body>
+</html>
